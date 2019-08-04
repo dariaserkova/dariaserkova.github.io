@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>dariaserkova.github.io/categories/</loc>
+    <loc>https://dariaserkova.github.io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>dariaserkova.github.io/</loc>
+    <loc>https://dariaserkova.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>dariaserkova.github.io/tags/</loc>
+    <loc>https://dariaserkova.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
