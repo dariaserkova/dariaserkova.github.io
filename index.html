@@ -5,7 +5,7 @@
 <meta name="theme-color" content="" />
 <meta charset="utf-8" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<meta name="description" content="Daria Serkova CV" />
+<meta name="description" content="my page ^_^" />
 <meta name="author" content="Daria Serkova" />
 <meta name="generator" content="aafu theme by Darshan in Hugo 0.56.3" />
 
@@ -97,7 +97,7 @@
   <div class="w-100 h-100">
     <img
       class="rounded rounded-circle mt-4"
-      src="/images/portfolio.jpg"
+      src="/images/profile.jpg"
       alt="Daria Serkova"
       style="width: 95%; max-width: 300px;"
     />
@@ -140,13 +140,19 @@
     </a>
   </div>
   
+  <div style="height:45px; width:45px;">
+    <a href="http://skype:dariaserkova?chat">
+      <i class="zoomlink mt-1 fab fa-skype"></i>
+    </a>
+  </div>
+  
 </div>
 
         <footer class="mb-4">
   <span class="markdownify">powered by <a href="https://gohugo.io/">hugo</a></span> &middot;
   <i>
     <a href="https://github.com/darshanbaral/aafu">
-      aafu
+      theme
     </a>
   </i>
   by
@@ -183,75 +189,60 @@
     <h2 class="accordion ">
       
       <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class="fas fa-briefcase"></i>
-        Experiences</span>
+        <i class="fas fa-cogs"></i>
+        Skills</span>
     </h2>
     <div
       class="panel overflow-hidden"
       
-    >
-      
-<dl>
-  <dt class="mb-0">
-    Senior Engineer of Infrastructure Team
-  </dt>
-  <dd class="mb-0 ml-3">
-    <span class="markdownify">Nov. 2018 - <em>Present</em></span>
-    &middot;
-    
-    Tinkoff Bank (TCS Group), Saint-Petersburg, Russia
-    
-  </dd>
-  <dd class="mb-0 ml-4 markdownify">Researched and made important architecture decisions such as the choice of orchestrator, deploy strategy, infrastructure type. Participated in division of &lsquo;monolith&rsquo; to container environment, supported QA and DEV teams with CI/CD processes and infrastructure issues, organized continuous maintenance and monitoring alerting of developing and production environments</dd>
-</dl>
-
-<dl>
-  <dt class="mb-0">
-    Senior Systems Engineer
-  </dt>
-  <dd class="mb-0 ml-3">
-    <span class="markdownify">Sep. 2017 - Nov. 2018</span>
-    &middot;
-    
-    EPAM Systems, Saint-Petersburg, Russia
-    
-  </dd>
-  <dd class="mb-0 ml-4 markdownify">Automated deploy, build and some of QA processes for a bunch of applications. Came up with and performed a way to manipulate CI/CD infrastructure as a code: store it in VCS, test it, and see when, which changes and by whom were made. Participated in applications&rsquo; migration to the cloud.</dd>
-</dl>
-
-<dl>
-  <dt class="mb-0">
-    Senior Application Administrator
-  </dt>
-  <dd class="mb-0 ml-3">
-    <span class="markdownify">Aug. 2014 - Aug. 2017</span>
-    &middot;
-    
-    I-Digital, Saint-Petersburg, Russia
-    
-  </dd>
-  <dd class="mb-0 ml-4 markdownify">Automated deploy process, organized the preproduction application testing, controlled and designed monitoring algorithms, supervised technical support engineers</dd>
-</dl>
-
-
-    </div>
-    
-    <h2 class="accordion ">
-      
-      <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class="fas fa-graduation-cap"></i>
-        Education</span>
-    </h2>
-    <div
-      class="panel overflow-hidden"
+      id="skill-panel"
       
     >
-      
-<dl>
-  <dt>Specialist</dt>
-  <dd class="mb-0 ml-3">Jun. 2008 - Aug. 2013 &middot; Saint-Petersburg State University of Engeneering and Economics</dd>
-  
-</dl>
+      <script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>CI/CD automation</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="90%" style="width: 0;"></div>
+</div>
+
+<code>Administration</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="80%" style="width: 0;"></div>
+</div>
+
+<code>Script writing</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="90%" style="width: 0;"></div>
+</div>
+
+<code>Monitoring/Troubleshooting</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="70%" style="width: 0;"></div>
+</div>
+
+<code>Mentoring</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="70%" style="width: 0;"></div>
+</div>
+
+<code>Customer Support</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="80%" style="width: 0;"></div>
+</div>
+
+<code>DevOps</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="80%" style="width: 0;"></div>
+</div>
 
 
     </div>
@@ -335,60 +326,55 @@
     <h2 class="accordion ">
       
       <span onclick="expandAccordion(this)" style="cursor: pointer;">
-        <i class="fas fa-cogs"></i>
-        Skills</span>
+        <i class="fas fa-briefcase"></i>
+        Experiences</span>
     </h2>
     <div
       class="panel overflow-hidden"
       
-      id="skill-panel"
-      
     >
-      <script>
-  let skillPanel = document.querySelector("#skill-panel")
-    .previousElementSibling;
-  skillPanel.addEventListener("click", function() {
-    let skillBars = document.querySelectorAll("#skill-percent");
-    skillBars.forEach(elem => {
-      elem.style.width = elem.classList[0];
-    });
-  });
-</script>
+      
+<dl>
+  <dt class="mb-0">
+    Senior Engineer of Infrastructure Team
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">Nov. 2018 - <em>Present</em></span>
+    &middot;
+    
+    Tinkoff Bank (TCS Group), Saint-Petersburg, Russia
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify">Researched and made important architecture decisions such as the choice of orchestrator, deploy strategy, infrastructure type. Participated in division of &lsquo;monolith&rsquo; to container environment, supported QA and DEV teams with CI/CD processes and infrastructure issues, organized continuous maintenance and monitoring alerting of developing and production environments</dd>
+</dl>
 
-<code>CI/CD automation</code>
-<div class="w-100 skillbar mt-1 mb-3">
-  <div id="skill-percent" class="90%" style="width: 0;"></div>
-</div>
+<dl>
+  <dt class="mb-0">
+    Senior Systems Engineer
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">Sep. 2017 - Nov. 2018</span>
+    &middot;
+    
+    EPAM Systems, Saint-Petersburg, Russia
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify">Automated deploy, build and some of QA processes for a bunch of applications. Came up with and performed a way to manipulate CI/CD infrastructure as a code: store it in VCS, test it, and see when, which changes and by whom were made. Participated in applications&rsquo; migration to the cloud.</dd>
+</dl>
 
-<code>Administration</code>
-<div class="w-100 skillbar mt-1 mb-3">
-  <div id="skill-percent" class="80%" style="width: 0;"></div>
-</div>
-
-<code>Script writing</code>
-<div class="w-100 skillbar mt-1 mb-3">
-  <div id="skill-percent" class="90%" style="width: 0;"></div>
-</div>
-
-<code>Monitoring/Troubleshooting</code>
-<div class="w-100 skillbar mt-1 mb-3">
-  <div id="skill-percent" class="70%" style="width: 0;"></div>
-</div>
-
-<code>Mentoring</code>
-<div class="w-100 skillbar mt-1 mb-3">
-  <div id="skill-percent" class="70%" style="width: 0;"></div>
-</div>
-
-<code>Customer Support</code>
-<div class="w-100 skillbar mt-1 mb-3">
-  <div id="skill-percent" class="80%" style="width: 0;"></div>
-</div>
-
-<code>DevOps</code>
-<div class="w-100 skillbar mt-1 mb-3">
-  <div id="skill-percent" class="80%" style="width: 0;"></div>
-</div>
+<dl>
+  <dt class="mb-0">
+    Senior Application Administrator
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">Aug. 2014 - Aug. 2017</span>
+    &middot;
+    
+    I-Digital, Saint-Petersburg, Russia
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify">Automated deploy process, organized the preproduction application testing, controlled and designed monitoring algorithms, supervised technical support engineers</dd>
+</dl>
 
 
     </div>
@@ -498,6 +484,26 @@ DirectedSoul.
 </p>
 
 
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-graduation-cap"></i>
+        Education</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+<dl>
+  <dt>Specialist</dt>
+  <dd class="mb-0 ml-3">Jun. 2008 - Aug. 2013 &middot; Saint-Petersburg State University of Engeneering and Economics</dd>
+  
+</dl>
 
 
     </div>
