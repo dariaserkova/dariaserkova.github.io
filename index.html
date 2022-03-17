@@ -7,7 +7,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <meta name="description" content="my page ^_^" />
 <meta name="author" content="Daria Serkova" />
-<meta name="generator" content="aafu theme by Darshan in Hugo 0.79.1" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.94.2" />
 
   <link
     rel="stylesheet"
@@ -146,6 +146,12 @@
     </a>
   </div>
   
+  <div style="height:45px; width:45px;">
+    <a href="docs/dserkova_cv.pdf">
+      <i class="zoomlink mt-1 fab fas fa-file-pdf"></i>
+    </a>
+  </div>
+  
 </div>
 
         <footer class="mb-4">
@@ -177,11 +183,11 @@
       
     >
       <p class="markdownify">
-  Almost 10 years experience in maintenance, deploy automation and monitoring realization of
+  10 years experience in maintenance, deploy automation and monitoring realization of
 different kinds of applications, in automating software life cycle using different set of tools,
 great experience of communicating with customer. I like the ideas of infrastructure as code, cloud computing
-and DevOps principles and try to behave in accordance with them. Speaking about tools I like python, ansible,
-docker, prometheus and try be be aware of it. Now I’m also getting started with Go.
+and DevOps principles and try to behave in accordance with them. Speaking about tools I like python, golang, kubernetes
+and try be be aware of it.
 </p>
 
     </div>
@@ -267,7 +273,27 @@ docker, prometheus and try be be aware of it. Now I’m also getting started wit
   <dt>
     <a href="https://www.terraform.io/" style="font-variant: small-caps; ">Terraform</a>
   </dt>
-  <dd class="mb-0 ml-3 markdownify">Infrastructure in AWS, GCP, Snowflake</dd>
+  <dd class="mb-0 ml-3 markdownify">Infrastructure in AWS, GCP, Snowflake, YandexCloud</dd>
+  
+  <dt>
+    <a href="" style="font-variant: small-caps; ">Kubernetes</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify">Vendor agnostic k8s clusters, k8s operators for business needs</dd>
+  
+  <dt>
+    <a href="https://docs.gitlab.com/ee/ci" style="font-variant: small-caps; ">Gitlab CI</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify">Automation of releases and infrustructure packages building, api with python, different types of runners/builders</dd>
+  
+  <dt>
+    <a href="" style="font-variant: small-caps; ">DB clusters</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify">clickhouse (on premise, k8s + operator), postgres (patroni, pgbouncer, k8s operator)</dd>
+  
+  <dt>
+    <a href="" style="font-variant: small-caps; ">Cloud computing</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify">AWS, Selectel, YandexCloud</dd>
   
   <dt>
     <a href="https://www.ansible.com" style="font-variant: small-caps; ">Ansible</a>
@@ -280,24 +306,9 @@ docker, prometheus and try be be aware of it. Now I’m also getting started wit
   <dd class="mb-0 ml-3 markdownify">Custom docker build for self-written and opensource applications. Orchestration. Monitoring.</dd>
   
   <dt>
-    <a href="https://docs.gitlab.com/ee/ci" style="font-variant: small-caps; ">Gitlab CI</a>
-  </dt>
-  <dd class="mb-0 ml-3 markdownify">api with python, different types of runners/builders</dd>
-  
-  <dt>
     <a href="" style="font-variant: small-caps; ">Monitoring, visualisation, alerting</a>
   </dt>
   <dd class="mb-0 ml-3 markdownify">Prometheus (exporters, PomQL for specific computing, alertmanager), Grafana, Kibana, Zabbix</dd>
-  
-  <dt>
-    <a href="" style="font-variant: small-caps; ">DB clusters</a>
-  </dt>
-  <dd class="mb-0 ml-3 markdownify">postgres + patroni, postgres + pgbouncer</dd>
-  
-  <dt>
-    <a href="" style="font-variant: small-caps; ">Orchestration</a>
-  </dt>
-  <dd class="mb-0 ml-3 markdownify">Nomad, K8s</dd>
   
   <dt>
     <a href="" style="font-variant: small-caps; ">Application and Web servers</a>
@@ -320,11 +331,6 @@ docker, prometheus and try be be aware of it. Now I’m also getting started wit
   <dd class="mb-0 ml-3 markdownify">Consul</dd>
   
   <dt>
-    <a href="" style="font-variant: small-caps; ">Cloud computing</a>
-  </dt>
-  <dd class="mb-0 ml-3 markdownify">Amazon Web Services, Selectel</dd>
-  
-  <dt>
     <a href="" style="font-variant: small-caps; ">Languages &amp; Operating Systems</a>
   </dt>
   <dd class="mb-0 ml-3 markdownify">Python, bash, golang, lua, deb- and rpm-based linux</dd>
@@ -332,7 +338,7 @@ docker, prometheus and try be be aware of it. Now I’m also getting started wit
   <dt>
     <a href="" style="font-variant: small-caps; ">Log management</a>
   </dt>
-  <dd class="mb-0 ml-3 markdownify">Graylog, fluentd</dd>
+  <dd class="mb-0 ml-3 markdownify">Graylog, fluentd, loki</dd>
   
 </dl>
 
@@ -354,7 +360,21 @@ docker, prometheus and try be be aware of it. Now I’m also getting started wit
     Senior Systems Engineer
   </dt>
   <dd class="mb-0 ml-3">
-    <span class="markdownify">Feb. 2020 - <em>Present</em></span>
+    <span class="markdownify">May 2021 - <em>Present</em></span>
+    &middot;
+    
+    Arrival, Saint-Petersburg, Russia
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify">Maintained core clusterised platform of the company, developed cluster-on-demand vendor agnostic system, k8s operator to provide environments on-demand, participated in supporting and consulting of dev and ops teams</dd>
+</dl>
+
+<dl>
+  <dt class="mb-0">
+    Senior Systems Engineer
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">Feb. 2020 - May 2021</span>
     &middot;
     
     Wrike, Saint-Petersburg, Russia
@@ -388,7 +408,7 @@ docker, prometheus and try be be aware of it. Now I’m also getting started wit
     EPAM Systems, Saint-Petersburg, Russia
     
   </dd>
-  <dd class="mb-0 ml-4 markdownify">Automated deploy, build and some of QA processes for a bunch of applications. Came up with and performed a way to manipulate CI/CD infrastructure as a code: store it in VCS, test it, and see when, which changes and by whom were made. Participated in applications' migration to the cloud.</dd>
+  <dd class="mb-0 ml-4 markdownify">Automated deploy, build and some of QA processes for a bunch of applications. Came up with and performed a way to manipulate CI/CD infrastructure as a code: store it in VCS, test it, and see when, which changes and by whom were made. Participated in applications&rsquo; migration to the cloud.</dd>
 </dl>
 
 <dl>

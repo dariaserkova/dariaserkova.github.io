@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://dariaserkova.github.io/</loc>
     <lastmod>2019-08-05T21:48:02+03:00</lastmod>
     <priority>1</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dariaserkova.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://dariaserkova.github.io/tags/</loc>
   </url>
-  
 </urlset>
